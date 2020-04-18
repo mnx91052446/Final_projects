@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".currencyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#0AB"
+        android:padding="2dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0AB">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="#0AB"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text="常用幣別"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="#0AB"
+                android:padding="5dp"
+                android:text="現金匯率"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:background="#0AB"
+                android:padding="5dp"
+                android:text="即期匯率"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF">
+
+            <ImageView
+                android:id="@+id/USDImg"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:src="@drawable/us" />
+
+            <TextView
+                android:id="@+id/USD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="美金"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="30.35"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="30.13"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:padding="1dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/JAPImg"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:src="@drawable/japan" />
+
+            <TextView
+                android:id="@+id/JAP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="日幣"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="0.2819"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="0.2804"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:padding="1dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/EURImg"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:src="@drawable/eu" />
+
+            <TextView
+                android:id="@+id/EUR"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="歐元"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="34.11"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="33.79"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:padding="1dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/CNYImg"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:src="@drawable/china" />
+
+            <TextView
+                android:id="@+id/CNY"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="人民幣"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="4.381"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="4.341"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"
+            android:padding="1dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/AUDImg"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:background="#FFF"
+                android:padding="5dp"
+                android:src="@drawable/australia" />
+
+            <TextView
+                android:id="@+id/AUD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="澳幣"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="21.28"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="21"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>
