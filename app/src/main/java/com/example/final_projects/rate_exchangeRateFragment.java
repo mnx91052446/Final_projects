@@ -2,7 +2,6 @@ package com.example.final_projects;
 
 import android.os.Bundle;
 import android.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
@@ -20,7 +18,7 @@ import java.text.DecimalFormat;
 /**
  * A simple {@link Fragment} subclass.
 */
-public class exchangeRateFragment extends Fragment {
+public class rate_exchangeRateFragment extends Fragment {
     private View mainView;
     private EditText etNum1,etNum2,etNum3,etNum4,etNum5,etNum6;
     private TextView txv14,txv16,txv18,txv20,txv22;
@@ -31,7 +29,7 @@ public class exchangeRateFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        mainView =  inflater.inflate(R.layout.fragment_exchange_rate, container, false);
+        mainView =  inflater.inflate(R.layout.rate_exchange_rate, container, false);
         Button exchange = mainView.findViewById(R.id.exchange);
         etNum1 = mainView.findViewById(R.id.editNum1);
         etNum2 = mainView.findViewById(R.id.editNum2);

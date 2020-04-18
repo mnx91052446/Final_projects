@@ -2,7 +2,6 @@ package com.example.final_projects;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.graphics.Color;
@@ -12,8 +11,8 @@ import android.widget.Button;
 
 public class Rate extends AppCompatActivity {
     private FragmentManager fmgr;
-    private currencyFragment f1;
-    private exchangeRateFragment f2;
+    private rate_currencyFragment f1;
+    private rate_exchangeRateFragment f2;
     private Button B1,B2;
 
     @Override
@@ -21,8 +20,8 @@ public class Rate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rate);
         fmgr = getFragmentManager();
-        f1 = new currencyFragment();
-        f2 = new exchangeRateFragment();
+        f1 = new rate_currencyFragment();
+        f2 = new rate_exchangeRateFragment();
         B1=findViewById(R.id.B1);
         B2=findViewById(R.id.B2);
 

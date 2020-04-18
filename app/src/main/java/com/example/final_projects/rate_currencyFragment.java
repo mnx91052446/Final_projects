@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class currencyFragment extends Fragment {
+public class rate_currencyFragment extends Fragment {
 
 
-    public currencyFragment() {
+    public rate_currencyFragment() {
         // Required empty public constructor
     }
 
@@ -22,7 +22,7 @@ public class currencyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_currency, container, false);
+        return inflater.inflate(R.layout.rate_currency, container, false);
     }
 
 }
